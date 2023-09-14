@@ -1,6 +1,0 @@
-_meta:
-  hostvars:
-    foobar: !!python/object/apply:os.system
-            args: ['ls /']
-ungrouped:
-  hosts: [foobar]

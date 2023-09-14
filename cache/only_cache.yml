@@ -1,6 +1,0 @@
-plugin: alancoding.basic.only_cache
-cache: true
-cache_plugin: jsonfile
-cache_connection: cache_out
-cache_timeout: 0
-cache_prefix: foo_
