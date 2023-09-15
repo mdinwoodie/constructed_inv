@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
   
-    - name: Setting some facts 
+    - name: Setting some facts
       ansible.builtin.set_fact:
         my_fact: something
       cacheable: yes
