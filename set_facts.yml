@@ -4,5 +4,6 @@
   
     - name: Setting some facts
       ansible.builtin.set_fact:
-        my_fact: something
+        my_fact: ignore
         cacheable: yes
+      when: ansible_distribution_major_version == "8"
