@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
 
-  - name: Setting some facts so that they will be persisted in the fact cache
-    ansible.builtin.set_fact:
-      my_fact: something
-    cacheable: yes
+    - name: Setting some facts so that they will be persisted in the fact cache
+      ansible.builtin.set_fact:
+        my_fact: something
+      cacheable: yes
