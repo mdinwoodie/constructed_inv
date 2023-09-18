@@ -2,4 +2,4 @@ plugin: constructed
 strict: true
 use_vars_plugins: true  # https://github.com/ansible/ansible/issues/75365
 groups:
-  target_group: group_names | intersect (['account_1234'])
+  target_group: ansible_local['preferences']['general']['bar'] | default ("none")  == "2"
