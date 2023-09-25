@@ -1,8 +1,11 @@
+Filter by multiple group_vars , existing ansible_facts  as well as injected ansible_facts
+
+
+
 plugin: constructed
 strict: true
-use_vars_plugins: true  # https://github.com/ansible/ansible/issues/75365
 groups:
   shutdown: resolved_state == "shutdown"
-  shutdown_in_product_dev: resolved_state == "shutdown" and account_alias == "product_dev" and ansible_distribution == "RedHat" and my_fact | default("none") != "ignore"
+  target_group: resolved_state == "shutdown" and account_alias == "product_dev" and ansible_distribution == "RedHat" and my_fact | default("none") != "ignore"
 compose:
   resolved_state: state | default("running")

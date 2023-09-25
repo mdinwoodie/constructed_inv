@@ -1,3 +1,7 @@
+Filter by specific kernel (ansible fact)
+
+
+
 plugin: constructed
 strict: true
 groups:
