@@ -5,6 +5,5 @@ Construct a target group from 'local facts'
 
 plugin: constructed
 strict: true
-use_vars_plugins: true  # https://github.com/ansible/ansible/issues/75365
 groups:
   target_group: ansible_local['preferences']['general']['bar'] | default ("none")  == "2"

@@ -5,4 +5,4 @@ Filter by group_vars and host_vars
 plugin: constructed
 strict: true
 groups:
-  target_group: account_alias | | default ("") == "product_dev" and myapplication | default ("none")  == "sap"
+  target_group: account_alias | default ("") == "product_dev" and myapplication | default ("none")  == "sap"
