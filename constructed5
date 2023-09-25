@@ -1,9 +1,13 @@
-Construct a target group from 'local facts'
+Construct a target group from 'ansible facts' and 'local facts'
 
-
+Smart inv:
+    Advanced
+        ansible_facts
+            ansible_distribution=RedHat
+                  then we can not use another ansible_facts
 
 
 plugin: constructed
 strict: true
 groups:
-  target_group: ansible_local['preferences']['general']['bar'] | default ("none")  == "2"
+  target_group: ansible_distribution =="RedHat" and ansible_local['preferences']['general']['bar'] | default ("none")  == "2"
