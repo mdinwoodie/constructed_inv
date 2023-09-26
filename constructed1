@@ -2,6 +2,8 @@ Filter by group,
 A cleaner approach would be have the playbook run against the group with "hosts = account_1234"
 But it's also possible to create the 'target_group' so that it's same hosts as group 'account_1234'
 
+A Smart inventory doesn't preserve the groups from the inventories
+
 
 plugin: constructed
 strict: true

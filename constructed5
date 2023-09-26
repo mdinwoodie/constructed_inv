@@ -1,6 +1,6 @@
-Construct a target group from 'ansible facts' and 'local facts'
+Construct a target group from multiple 'ansible facts' / 'local facts'
 
-Smart inv:
+Smart inv is limited to using 1 ansible_facts
     Advanced
         ansible_facts
             ansible_distribution=RedHat
