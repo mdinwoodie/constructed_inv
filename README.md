@@ -3,6 +3,8 @@
 This repository contains two inventories under issues/AWX371
 Those are based from Alan Rominger's gitub repo: 
 https://github.com/AlanCoding/Ansible-inventory-file-examples
+and inspired by his blog post:
+https://www.ansible.com/blog/how-to-use-the-new-constructed-inventory-feature-in-aap-2.4
 
 I modified Alan's inventory to reflect my existing RHEL7 and 8 test systems
 
