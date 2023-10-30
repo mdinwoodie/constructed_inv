@@ -1,6 +1,7 @@
 Filter by group, 
-A cleaner approach would be have the playbook run against the group with "hosts = account_1234"
-But it's also possible to create the 'target_group' so that it's same hosts as group 'account_1234'
+The traditional approach would be have the playbook run against the group with "hosts = account_1234"
+But constructed inventories allows us to reference magic variable such as "group_names" 
+apply a filter to it, so this is that functionality we demonstrate here
 
 A Smart inventory doesn't preserve the groups from the inventories
 

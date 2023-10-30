@@ -1,5 +1,6 @@
 Filter by specific kernel (ansible fact)
-
+This could be practical to identify which systems in the field are vulnerable
+(running) a particular kernel affected by a CVE
 
 
 plugin: constructed

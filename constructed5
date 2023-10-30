@@ -1,5 +1,5 @@
 Construct a target group from multiple 'ansible facts' / 'local facts'
-
+ 
 Smart inv is limited to using 1 ansible_facts
     Advanced
         ansible_facts
